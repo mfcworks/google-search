@@ -25,8 +25,6 @@ module.exports = GoogleSearch =
   deactivate: ->
     @subscriptions.dispose()
 
-  serialize: ->
-
   search: ->
 #    console.log 'google-search:search'
     if editor = atom.workspace.getActiveTextEditor()
