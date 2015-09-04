@@ -1,7 +1,7 @@
 {
   "name": "google-search",
   "main": "./lib/google-search",
-  "version": "0.1.4",
+  "version": "0.0.0",
   "description": "Search the selected word on Google",
   "keywords": [],
   "activationCommands": {
