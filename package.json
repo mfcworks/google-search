@@ -3,8 +3,7 @@
   "main": "./lib/google-search",
   "version": "0.1.0",
   "description": "Search the selected word on Google",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "google-search:search"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

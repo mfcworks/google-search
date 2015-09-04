@@ -1,4 +1,5 @@
 {CompositeDisposable} = require 'atom'
+shell = require 'shell'
 
 module.exports = GoogleSearch =
   subscriptions: null
@@ -32,14 +33,4 @@ module.exports = GoogleSearch =
       selected = editor.getSelectedText()
 
       searchURL = @URL.replace /%s/, encodeURIComponent(selected.replace(/\n/g, ' '))
-
-      command = switch process.platform
-        when 'win32'
-          'explorer'
-        when 'linux'
-          'xdg-open'
-        else
-          'open'
-
-#      console.log "#{command} \"#{searchURL}\""
-      require('child_process').exec "#{command} \"#{searchURL}\""
+      shell.openExternal searchURL
